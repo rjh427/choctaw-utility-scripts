@@ -1,0 +1,5 @@
+select entity_id, field_link_title, field_link_uri from node__field_link where field_link_uri like 'internal%';
+
+update node__field_link set field_link_uri = replace(field_link_uri, 'internal:/', ''), field_link_title = field_link_uri, field_link_uri = concat('http://', field_link_uri) where field_link_uri like 'internal:/%';
+
+

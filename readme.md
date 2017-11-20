@@ -24,3 +24,7 @@ cycles/importer.php
 This is very-much a work in progress and still a bit messy, it will change as I finish tweaking and improving it - at this writing it is ~75% complete.   
 This script uses the [Simple HTML DOM Parser](http://simplehtmldom.sourceforge.net/manual.htm "Simple HTML DOM parser"), to parse through saved HTML pages from a now-defunct blogging platform, via a prepared array of locally-accessible URLs, to turn that content into a well-formed XML document that can be imported directly into WordPress.
 It does use a few global variables and while I do believe that global vars are bad, it's also a one-off script that parses known content in a controlled local sandbox.
+
+choctaw/queries  
+Some misc. queries. The second one corrects an issue with external URLs being treated like internal URLs under Drupal 8, after they were migrated from Drupal 7.
+
